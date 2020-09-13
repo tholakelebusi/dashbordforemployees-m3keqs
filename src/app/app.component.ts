@@ -1,4 +1,7 @@
 import { Component, VERSION } from '@angular/core';
+import {DialogComponent} from '../dialog/dialog.component'
+
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'my-app',
@@ -17,7 +20,7 @@ export class AppComponent  {
   openDialog(): void {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
       width: '350px',
-      data: "Do you confirm the deletion of this data?"
+      data: "Do you want to delet?"
     });
 
     dialogRef.afterClosed().subscribe(result => {

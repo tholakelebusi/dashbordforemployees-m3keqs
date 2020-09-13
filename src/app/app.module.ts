@@ -5,15 +5,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
-import {MatButtonModule} from '@angular/material/button';
+
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
-
-
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -28,7 +27,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 @NgModule({
   imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule],
 
-  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
+  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent
     ],
      entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
