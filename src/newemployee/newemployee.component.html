@@ -1,0 +1,30 @@
+<p>new-eployee works!</p>
+
+
+
+<div>
+<label for="fname">Name</label>
+<input type="text" name="Fname" [(ngModel)]="names">
+</div>
+
+<div>
+<label for="fname">Surname</label>
+<input type="text" name="Surname" [(ngModel)]="surnames">
+</div>
+
+<div>
+    <label for="department">Department</label>
+    <input type="text" name="department" [(ngModel)]="departments">
+    </div>
+<div>
+<label for="age">Age</label>
+<input type="number" name="age" [(ngModel)]="ages">
+</div>
+
+<div>
+<label for="postion">Position</label>
+<input type="text" name="postion" [(ngModel)]="positions">
+</div>
+
+<button (click)="save()">Save</button>
+<button>Update</button>

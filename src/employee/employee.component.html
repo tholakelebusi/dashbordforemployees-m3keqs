@@ -1,0 +1,31 @@
+<p>
+employee works!
+</p>
+<h3>workers</h3>
+
+<div class="all">
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let item of employees">
+
+   <img class="photo" src="{{item.myimage}}">
+
+   <div class="name">
+    {{item.name}}
+    {{item.surname}}
+    </div>
+
+    <div class="age">
+        {{item.age}}
+    </div>
+
+    <div class="position">
+        {{item.position}}
+    </div>
+ <button mat-raised-button class="footBtn" (click)="openDialog(item)">Delete</button>
+ 
+    <button mat-raised-button class(click)="update()">Update</button>
+  </mat-grid-tile>
+    </mat-grid-list>
+
+</div>
+

@@ -1,0 +1,75 @@
+/* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
+body{
+    background-color: burlywood;
+}
+
+.name
+{
+    font-size:1.1cm;
+font-weight: bolder;
+}
+
+.position
+{
+    font-size: 0.9cm;
+    font-style: italic;
+    font-weight: bolder;
+}
+.age
+{
+    font-weight: bolder;
+    font-size:0.6cm;
+}
+.all
+{
+    position:rtl;
+    padding: 0.7cm;
+    margin-right:38cm;
+    margin-bottom:1cm;
+ 
+    background-color: whitesmoke;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0, 0,0,2);
+  
+}
+.btn
+{
+    color: rgb(27, 27, 26);
+    font-weight:bolder;
+    width: 40%;
+   font-size: 0.5cm;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0,0,2);
+  
+}
+p
+{
+   
+    margin-bottom: 1cm;
+    font-size: 50px;
+    margin-left: 10cm;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant-caps: small-caps;
+  
+   
+}
+.photo
+{
+  margin-left: 0.5cm;
+    height:5cm;
+     width:5cm;
+     
+}
+tr{
+    background-color:whitesmoke;
+
+}
+
+td{
+    font-size: larger;
+    font-style: oblique;
+}

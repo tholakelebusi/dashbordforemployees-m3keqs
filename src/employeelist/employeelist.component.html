@@ -1,0 +1,25 @@
+<p>
+employeelist works!
+</p>
+<div>
+    <h3>List of the Employee</h3>
+ 
+        <table>
+            <tr>
+                <td>Names</td>
+                <td>Surnames</td>
+                <td>Age</td>
+                <td>Positon</td>
+            </tr>
+            
+        <tr *ngFor="let list of employeelist">
+        <td>{{list.name}}</td>
+        <td> {{list.surname}}</td>
+            <td>{{list.age}}</td>
+                <td> {{list.position}}</td>
+            </tr>
+            </table>
+          
+    </div>
+
+    <a href="/"><button class="goHome">Go back Home</button></a>
