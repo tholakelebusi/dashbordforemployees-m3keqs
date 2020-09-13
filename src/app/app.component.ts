@@ -18,7 +18,7 @@ export class AppComponent  {
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+    const dialogRef = this.dialog.open(DialogComponent, {
       width: '350px',
       data: "Do you want to delet?"
     });
