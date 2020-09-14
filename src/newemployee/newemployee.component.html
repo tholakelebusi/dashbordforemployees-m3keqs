@@ -12,10 +12,15 @@
 <input type="text" name="Surname" [(ngModel)]="surnames">
 </div>
 
-<div>
-    <label for="department">Department</label>
-    <input type="text" name="department" [(ngModel)]="departments">
-    </div>
+<div>u
+    
+      <mat-form-field appearance="fill">
+    <mat-label>Department</mat-label>
+    <mat-select>
+      <mat-option value="option">IT Department</mat-option>
+      <mat-option value="option">HR Department</mat-option>
+    </mat-select>
+  </mat-form-field>
 <div>
 <label for="age">Age</label>
 <input type="number" name="age" [(ngModel)]="ages">
