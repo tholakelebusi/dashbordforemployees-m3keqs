@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DialogComponent } from '../dialog/dialog.component';
 import {MatDialog} from '@angular/material/dialog';
+import { RecordService } from '../record.service';
 
 @Component({
   selector: 'app-employee',
@@ -9,13 +10,9 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
-
-  ngOnInit(): void {
-  }
 
 employeelist=[];
-  constructor(private myfirst:RecordService) { }
+  constructor(private myfirst:RecordService,public dialog: MatDialog){}
 
  
   ngOnInit(): void {
@@ -23,11 +20,7 @@ employeelist=[];
   }
   
 
-  title = 'angular-confirmation-dialog';
-
-  constructor(public dialog: MatDialog) {}
-
-  openDialog(): void {
+  openDialog(){
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '350px',
       data: "Do you want to delet?"
@@ -37,7 +30,8 @@ employeelist=[];
       if(result)
        {
         console.log('Yes clicked');
-         const index=this.employees.indexOf(name);
+
+         const index=this.employeelist.indexOf(name);
     if(index>-1)
     {
       this.employees.splice(index,1);
