@@ -22,13 +22,14 @@ import { HelloComponent } from './hello.component';
 import {EmployeelistComponent} from '../employeelist/employeelist.component';
 import {ProjectComponent} from '../project/project.component';
 import {NewemployeeComponent} from '../newemployee/newemployee.component';
+import {EmployeesComponent} from '../employees/employees.component';
 
 
 
 @NgModule({
   imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule],
 
-  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent
+  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent
     ],
      entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]

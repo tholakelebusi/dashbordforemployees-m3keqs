@@ -9,7 +9,10 @@ import { RecordService } from '../record.service';
   styleUrls: ['./employee.component.scss']
 })
 export class EmployeeComponent implements OnInit {
-  employees = [{ myimage: 'https://scstylecaster.files.wordpress.com/2015/04/477973067.jpg', name: "Bongani", surname: "Smith", position: "Project Manager", age: 44},
+  constructor(private myfirst:RecordService,public dialog: MatDialog){}
+  ngOnInit(): void {
+  }
+  employees =[{ myimage: 'https://scstylecaster.files.wordpress.com/2015/04/477973067.jpg', name: "Bongani", surname: "Smith", position: "Project Manager", age: 44},
   { myimage: 'https://www.ebony.com/wp-content/uploads/2016/07/businessman1_original_13747.jpg', name: "Pumlani", surname: "Fenter", position: "IT Analyst", age: 18 },
   { myimage: 'http://atlantablackstar.com/wp-content/uploads/2015/02/Black-businesswoman.jpg', name: "Bogiwe", surname: "Sibuyi", position: "Network Administrator", age: 28 },
   { myimage: 'https://get.pxhere.com/photo/man-person-people-meeting-corporate-professional-business-profession-speaker-elder-official-success-clergy-893119.jpg', name: "William", surname: "Rikhotso", position: "IT Coordinator", age: 45},
@@ -22,11 +25,7 @@ export class EmployeeComponent implements OnInit {
 
 
 
-  constructor(private myfirst:RecordService,public dialog: MatDialog){}
-
- 
-  ngOnInit(): void {
-  }
+  
   
 
   openDialog(){
@@ -70,7 +69,7 @@ export class EmployeeComponent implements OnInit {
   }
   
     }
-    *
+    
        
     
 
