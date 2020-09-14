@@ -6,18 +6,19 @@ employee works!
 
 <div class="all">
   
-<div *ngFor="let list of employeelist">
+<div *ngFor="let list of employees">
         {{list.name}}
          {{list.surname}}
             {{list.age}}
                  {{list.position}}
-           
-        
+          
 
  <button mat-button (click)="openDialog()">Delete</button>
     <button mat-raised-button class(click)="update()">Update</button>
-</div>
 
 </div>
+</div>
+
+
 
 
