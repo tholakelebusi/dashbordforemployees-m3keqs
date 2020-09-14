@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogComponent } from '../dialog/dialog.component';
+import {MatDialog} from '@angular/material/dialog';
+import { RecordService } from '../record.service';
 
 @Component({
   selector: 'app-employees',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
@@ -17,7 +20,48 @@ export class EmployeesComponent implements OnInit {
   { myimage: 'https://get.pxhere.com/photo/man-person-people-meeting-corporate-professional-business-profession-speaker-elder-official-success-clergy-893119.jpg', name: "William", surname: "Rikhotso", position: "IT Coordinator", age: 45},
   { myimage: 'http://www.ljaassociates.org/img/james-etuusa.jpg', name: "Gift", surname: "MAzive", position: "Network Admin", age: 50},
   { myimage: 'https://simlinewsonline.files.wordpress.com/2019/06/img-20190613-wa0005-19041414821351052416.jpg?w=825', name: "Sabelo", surname: "Ncwane", position: "IT Analyst", age: 34},{myimage: 'https://dk9zyhfatdvcy.cloudfront.net/public/coaches/ce09b405-6d1e-4e48-9353-a2b2f4640f40/original', name: "James", surname: "Cossa", position: "Programmer", age: 33,},
-  { myimage:'https://8020.legal/images/staff/m_allen.jpg',name: "Busi", surname: "khosa", position: "Secretary", age: 24},
-  { myimage:'https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2016/02/Headshot-on-White-Background_1.jpg?resize=750%2C486&ssl=1',name: "Nomusa", surname: "zwane", position: "Business Analyst", age: 22,},
+  { myimage:'https://8020.legal/images/staff/m_allen.jpg',name: "Busi", surname: "khosa", position: "Secretary", age: 24},{ myimage:'https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2016/02/Headshot-on-White-Background_1.jpg?resize=750%2C486&ssl=1',name: "Nomusa", surname: "zwane", position: "Business Analyst", age: 22,},
 { myimage: 'http://images2.living.net/ImagesHomeProd1/TN/tln/member/photos/m11568221.jpg', name: "Smangele", surname: "Nhlongo", position: "Manager", age: 28 }];
+
+openDialog(){
+    const dialogRef = this.dialog.open(DialogComponent, {
+      data: "Do you want to delet?"
+    });
+
+ dialogRef.afterClosed().subscribe(result => {
+      if(result)
+       {
+  const index=this.employees.indexOf(name);
+    if(index>-1)
+    {
+      this.employees.splice(index,1);
+      return true;
+
+    }
+
+else{
+  return false;
+}
+    
+        // DO SOMETHING
+      }
+    });
+
+}
+
+update()
+{
+  var retval = confirm("Do you want to Update?");
+if (retval == true)
+{
+ 
+  return true;
+}
+  else
+{
+  
+  return false;
+}
+
+  }
 }
