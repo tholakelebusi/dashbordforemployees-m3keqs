@@ -1,10 +1,25 @@
 <h3>Project Information</h3>
-<div *ngFor="let list of project">
-    <div>
-    {{list.projectName}}
-    {{list.projectDetails}}
-    {{list.projectDate}}
+
+  <table>
+            <tr>
+                <td>Project Name</td>
+                <td>Project Details</td>
+                <td>Date</td>
+                <td>Department Name</td>
+            </tr>
+<tr *ngFor="let list of project">
+     <td>{{list.projectName}}</td>
+     <td>{{list.projectDetails}}</td>
+     <td>{{list.projectDate}}</td>
+    <td> {{list.implementDept}}</td>
+    </tr>
+    </table>
+
+
+ 
+ 
+      
+            
+       
+          
   
-    {{list.implementDept}}
-    </div>
-</div>

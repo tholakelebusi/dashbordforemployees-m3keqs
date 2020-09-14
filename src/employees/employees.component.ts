@@ -28,7 +28,7 @@ export class EmployeesComponent implements OnInit {
 openDialog(name){
     const dialogRef = this.dialog.open(DialogComponent, {
       height:'400px',
-      width:'600px',
+      width:'1600px',
       
       data: "Do you want to delet?"
     });
