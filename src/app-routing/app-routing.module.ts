@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EmployeeComponent } from '../employee/employee.component';
 import { EmployeelistComponent } from '../employeelist/employeelist.component';
 import { ProjectComponent } from '../project/project.component';
-import { NewemployeeComponent } from '../newemployee/newemployee.component';
+
 
 
 

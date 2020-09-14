@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  project = [{ projectName: 'Fixing Hardware', projectDetails: 'zzzz', projectDate: '12/09/2020', implementDept: 'IT Dept' },
-    { projectName: 'Fixing Hardware', projectDetails: 'zzzz', projectDate: '12/09/2020', implementDept: 'IT Dept' },
-    { projectName: 'Fixing Hardware', projectDetails: 'zzzz', projectDate: '12/09/2020', implementDept: 'IT Dept' }];
+  project = [
+    { projectName: 'Fixing Hardware', 
+    projectDetails: 'Fixing broken hardwares',
+     projectDate: '12/09/2020',
+      implementDept: 'IT Dept' },
+    { projectName:'Installing Software',
+     projectDetails: 'Installation of new softwares',
+      projectDate: '16/09/2020', 
+      implementDept: 'H Dept' },
+    { projectName: 'Changing Keybords', 
+    projectDetails: 'Installing wireless keybords',
+     projectDate: '14/09/2020',
+      implementDept: 'IT Dept' }];
   constructor() { }
 
   ngOnInit(): void {
