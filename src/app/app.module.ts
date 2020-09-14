@@ -26,7 +26,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
 
 @NgModule({
-  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatF],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent
     ],
