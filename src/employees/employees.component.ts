@@ -23,24 +23,13 @@ export class EmployeesComponent implements OnInit {
   { myimage:'https://8020.legal/images/staff/m_allen.jpg',name: "Busi", surname: "khosa", position: "Secretary", age: 24},{ myimage:'https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2016/02/Headshot-on-White-Background_1.jpg?resize=750%2C486&ssl=1',name: "Nomusa", surname: "zwane", position: "Business Analyst", age: 22,},
 { myimage: 'http://images2.living.net/ImagesHomeProd1/TN/tln/member/photos/m11568221.jpg', name: "Smangele", surname: "Nhlongo", position: "Manager", age: 28 }];
 
-del(name)
-{
-  const index=this.employees.indexOf(name);
-  var retval = confirm("Do you want to Delete");
-    if (retval == true)
-    if(index>-1)
-    {
-      this.employees.splice(index,1);
-      return true;
 
-    }
-    else
-    {
-    return false;
-    }
-}
-openDialog(){
+
+openDialog(name){
     const dialogRef = this.dialog.open(DialogComponent, {
+      height:'400px',
+      width:'600px',
+      
       data: "Do you want to delet?"
     });
  const index=this.employees.indexOf(name);
