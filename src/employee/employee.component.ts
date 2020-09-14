@@ -21,12 +21,11 @@ export class EmployeeComponent implements OnInit {
 { myimage: 'http://images2.living.net/ImagesHomeProd1/TN/tln/member/photos/m11568221.jpg', name: "Smangele", surname: "Nhlongo", position: "Manager", age: 28 }];
 
 
-employeelist=[];
+
   constructor(private myfirst:RecordService,public dialog: MatDialog){}
 
  
   ngOnInit(): void {
-    this.employeelist = this.myfirst.getData();
   }
   
 
@@ -41,17 +40,17 @@ employeelist=[];
        {
         console.log('Yes clicked');
 
-         const index=this.employeelist.indexOf(name);
+         const index=this.employees.indexOf(name);
     if(index>-1)
     {
-      this.employeelist.splice(index,1);
+      this.employees.splice(index,1);
     }
         // DO SOMETHING
       }
     });
 
 }
- /* delete(name)
+  delete(name)
   {
     var retval = confirm("Do you want to Delete");
     if (retval == true)
@@ -71,7 +70,7 @@ employeelist=[];
   }
   
     }
-    */
+    *
        
     
 

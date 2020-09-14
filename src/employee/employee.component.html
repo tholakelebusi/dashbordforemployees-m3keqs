@@ -1,21 +1,28 @@
-<p>
-employee works!
-</p>
-<h3>workers</h3>
 
+
+<h3>Employee Dashbored</h3>
 
 <div class="all">
-  
-<div *ngFor="let list of employees">
-        {{list.name}}
-         {{list.surname}}
-            {{list.age}}
-                 {{list.position}}
-          
+<div *ngFor="let item of employees">
 
- <button mat-button (click)="openDialog()">Delete</button>
-    <button mat-raised-button class(click)="update()">Update</button>
+   <img class="photo" src="{{item.myimage}}">
+   <div class="name">
+    {{item.name}}
+    {{item.surname}}
+    </div>
 
+    <div class="age">
+        {{item.age}}
+    </div>
+
+    <div class="position">
+        {{item.position}}
+    </div>
+
+    <div class="btn">
+    <button (click)="delete(item)">Delete</button>
+    <button (click)="update()">Update</button>
+</div>
 </div>
 </div>
 
