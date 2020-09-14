@@ -15,7 +15,7 @@ export class ProjectComponent implements OnInit {
     { projectName:'Installing Software',
      projectDetails: 'Installation of new softwares',
       projectDate: '16/09/2020', 
-      implementDept: 'H Dept' },
+      implementDept: 'IT Dept' },
     { projectName: 'Changing Keybords', 
     projectDetails: 'Installing wireless keybords',
      projectDate: '14/09/2020',

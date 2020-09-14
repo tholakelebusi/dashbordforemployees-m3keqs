@@ -5,22 +5,14 @@ employee works!
 
 
 <div class="all">
-<div *ngFor="let item of employees">
-
-   <img class="photo" src="{{item.myimage}}">
-
-   <div class="name">
-    {{item.name}}
-    {{item.surname}}
-    </div>
-
-    <div class="age">
-        {{item.age}}
-    </div>
-
-    <div class="position">
-        {{item.position}}
-    </div>
+  
+<div *ngFor="let list of employeelist">
+        {{list.name}}
+         {{list.surname}}
+            {{list.age}}
+                 {{list.position}}
+           
+        
 
  <button mat-button (click)="openDialog()">Delete</button>
     <button mat-raised-button class(click)="update()">Update</button>
