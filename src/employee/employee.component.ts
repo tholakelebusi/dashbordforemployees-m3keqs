@@ -34,7 +34,7 @@ employeelist=[];
          const index=this.employeelist.indexOf(name);
     if(index>-1)
     {
-      this.employees.splice(index,1);
+      this.employeelist.splice(index,1);
     }
         // DO SOMETHING
       }
