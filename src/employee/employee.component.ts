@@ -27,6 +27,30 @@ export class EmployeeComponent implements OnInit {
 ];
   
 
+  title = 'angular-confirmation-dialog';
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogComponent, {
+      width: '350px',
+      data: "Do you want to delet?"
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if(result)
+       {
+        console.log('Yes clicked');
+         const index=this.employees.indexOf(name);
+    if(index>-1)
+    {
+      this.employees.splice(index,1);
+    }
+        // DO SOMETHING
+      }
+    });
+
+}
  /* delete(name)
   {
     var retval = confirm("Do you want to Delete");

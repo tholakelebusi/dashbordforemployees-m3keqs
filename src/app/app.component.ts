@@ -13,22 +13,5 @@ export class AppComponent  {
 
 
 
-    title = 'angular-confirmation-dialog';
-
-  constructor(public dialog: MatDialog) {}
-
-  openDialog(): void {
-    const dialogRef = this.dialog.open(DialogComponent, {
-      width: '350px',
-      data: "Do you want to delet?"
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if(result) {
-        console.log('Yes clicked');
-        // DO SOMETHING
-      }
-    });
-
-}
+  
 }
