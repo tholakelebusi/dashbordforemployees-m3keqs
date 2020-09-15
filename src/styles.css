@@ -1,16 +1,11 @@
 /* Add application styles & imports to this file! */
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
-body{
-    background-color:azure;
-}
-
 .name
 {
     font-size:1.1cm;
 font-weight: bolder;
+ margin-left:0.5cm;
 }
 
 .position
@@ -18,21 +13,23 @@ font-weight: bolder;
     font-size: 0.9cm;
     font-style: italic;
     font-weight: bolder;
+    margin-left:0.5cm;
 }
 .age
 {
     font-weight: bolder;
     font-size:0.6cm;
+     margin-left:0.5cm;
 }
 .all
 {
-    position:rtl;
-    padding: 0.7cm;
-    margin-right:38cm;
-    margin-bottom:1cm;
- 
-    background-color:white;
-  
+   margin-top: 1cm;
+    padding: 0.7cm;  
+   
+    width:6cm;
+    height: 11cm;
+
+margin-bottom: 1cm;
     box-shadow: 0px 8px 16px 0px rgba(0, 0,0,2);
   
 }

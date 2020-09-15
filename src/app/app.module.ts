@@ -23,12 +23,13 @@ import {EmployeelistComponent} from '../employeelist/employeelist.component';
 import {ProjectComponent} from '../project/project.component';
 import {NewemployeeComponent} from '../newemployee/newemployee.component';
 import {EmployeesComponent} from '../employees/employees.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
 
 @NgModule({
-  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule,MatGridListModule,HttpClient],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent
     ],
