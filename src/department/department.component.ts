@@ -8,12 +8,12 @@ import { DepartmentService } from '../department.service';
 })
 export class DepartmentComponent implements OnInit {
 
-  employeelist=[];
-  constructor(private myfirst:DepartmentService) { }
+  departments=[];
+  constructor(private mydept:DepartmentService) { }
 
  
   ngOnInit(): void {
-    this.employeelist = this.myfirst.getDataDept();
+    this.departments= this.mydept.getDataDept();
   }
 
 }

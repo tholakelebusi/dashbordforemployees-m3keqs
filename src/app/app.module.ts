@@ -32,7 +32,7 @@ import {DepartmentComponent} from '../department/department.component';
 @NgModule({
   imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule,MatGridListModule],
 
-  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent,Department
+  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent,DepartmentCompo
     ],
      entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
