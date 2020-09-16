@@ -23,15 +23,16 @@ import {EmployeelistComponent} from '../employeelist/employeelist.component';
 import {ProjectComponent} from '../project/project.component';
 import {NewemployeeComponent} from '../newemployee/newemployee.component';
 import {EmployeesComponent} from '../employees/employees.component';
-import {HttpClientModule} from '@angular/common/http';
+import {DepartmentComponent} from '../department/department.component';
+
 
 
 
 
 @NgModule({
-  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule,MatGridListModule,HttpClient],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule,MatFormFieldModule,MatGridListModule],
 
-  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent
+  declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent,DialogComponent,EmployeesComponent,Department
     ],
      entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
