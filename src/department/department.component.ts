@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DepartmentService } from '../department.service';
+
 @Component({
   selector: 'app-department',
   templateUrl: './department.component.html',
