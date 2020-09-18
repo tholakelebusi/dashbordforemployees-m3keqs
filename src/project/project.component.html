@@ -1,13 +1,29 @@
 <h3>Project Information</h3>
 
-<mat-grid-list cols="3" rowHeight="160px">
+<mat-grid-list cols="3" rowHeight="140px">
 <mat-grid-tile *ngFor="let list of project">
+  <div class="pro">
+  <mat-card>
+    <mat-card-title>
      {{list.projectName}}
+     </mat-card-title>
+
+     <mat-card-content>
      {{list.projectDetails}}
+     </mat-card-content>
+
+     <mat-card-content>
      {{list.projectDate}}
+     </mat-card-content>
+
+     <mat-card-content>
      {{list.implementDept}}
+     </mat-card-content>
+     </mat-card>
+  </div>
 </mat-grid-tile>
 </mat-grid-list>
+
 
 
  
