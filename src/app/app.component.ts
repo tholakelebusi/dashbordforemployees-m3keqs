@@ -1,7 +1,7 @@
 import { Component, VERSION } from '@angular/core';
-import {DialogComponent} from '../dialog/dialog.component'
 
-import {MatDialog} from '@angular/material/dialog';
+
+
 
 @Component({
   selector: 'my-app',

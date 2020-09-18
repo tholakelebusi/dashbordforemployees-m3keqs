@@ -1,11 +1,13 @@
 <h3>Project Information</h3>
 
-
-<tr *ngFor="let list of project">
+<mat-grid-list cols="3" rowHeight="160px">
+<mat-grid-tile *ngFor="let list of project">
      {{list.projectName}}
      {{list.projectDetails}}
      {{list.projectDate}}
      {{list.implementDept}}
+</mat-grid-tile>
+</mat-grid-list>
 
 
  

@@ -1,7 +1,7 @@
-.mat-dialog-content
-{
-  background-color:burlywood;
-width: 8cm;
-height:4cm;
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+.div
+{
+  color: purple;
+  background-color: gold;
 }

@@ -2,7 +2,8 @@
 <h3>Employee Dashbored</h3>
 
   
-<div *ngFor="let item of employees">
+<mat-grid-list cols="4" rowHeight="15cm">
+<mat-grid-tile *ngFor="let item of employees">
 <div class="all">
    <img class="photo" src="{{item.myimage}}">
    <div class="name">
@@ -19,7 +20,8 @@
     </div>
   
 
-  <button mat-button (click)="openDialog(item)">Delete</button>
-   <button mat-button (click)="update()"  color="primary">Update</button>
+  <button mat-raised-button (click)="openDialog(item)" color="accent">Delete</button>
+   <button mat-raised-button (click)="update()"  color="primary">Update</button>
 </div>
-</div>
+</mat-grid-tile>
+</mat-grid-list>
