@@ -1,6 +1,32 @@
 <h3>Employee Dashbored</h3>
+	<button (click)="open()"> AddEmployee </button>
+<div *ngIf="n1">
+	<div>
+		<label for="fname">Name</label>
+		<input type="text" name="Fname" [(ngModel)]="names">
+</div>
 
-<button mat-raised-button (click)="add()"  color="primary">add</button>
+		<div>
+			<label for="fname">Surname</label>
+			<input type="text" name="Surname" [(ngModel)]="surnames">
+</div>
+
+
+
+			<div>
+				<label for="age">Age</label>
+				<input type="number" name="age" [(ngModel)]="ages">
+</div>
+
+				<div>
+					<label for="postion">Position</label>
+					<input type="text" name="postion" [(ngModel)]="positions">
+          	<button (click)="addToLists()"> AddEmployee </button>
+</div>
+
+
+				</div>
+
 <mat-grid-list cols="4" rowHeight="15cm">
 	<mat-grid-tile *ngFor="let item of employees">
 		<div class="all">
