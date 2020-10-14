@@ -11,11 +11,11 @@ import { RecordService } from "../record.service";
 export class EmployeesComponent implements OnInit {
   n1: boolean = false;
   employees = [];
-   names = '';
-  surnames = '';
-  positions = '';
-  ages = '';
-  url='';
+  names = "";
+  surnames = "";
+  positions = "";
+  ages = "";
+  url = "";
 
   constructor(public dialog: MatDialog, private employ: RecordService) {}
 
@@ -46,8 +46,14 @@ export class EmployeesComponent implements OnInit {
 
   addToLists() {
     this.n1 = true;
-const newEmpl={image:this.url,name: this.names,surname:this.surnames,age:this.ages,position: this.positions};
-this.employees.push(newEmpl);
-     
+    const newEmpl = {
+      image: this.url,
+      name: this.names,
+      surname: this.surnames,
+      age: this.ages,
+      position: this.positions
+    };
+    this.employees.push(newEmpl);
+    this.n1 = false;
   }
 }
