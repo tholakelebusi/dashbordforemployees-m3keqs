@@ -1,28 +1,27 @@
-
 <h3>Employee Dashbored</h3>
 
-  
+<button mat-raised-button (click)="add()"  color="primary">add</button>
 <mat-grid-list cols="4" rowHeight="15cm">
-<mat-grid-tile *ngFor="let item of employees">
-<div class="all">
-   <img class="photo" src="{{item.myimage}}">
-   <div class="name">
-    {{item.name}}
-    {{item.surname}}
-    </div>
+	<mat-grid-tile *ngFor="let item of employees">
+		<div class="all">
+			<img class="photo" src="{{item.myimage}}">
+			<div class="name">
+				{{item.name}}
+				{{item.surname}}
+			</div>
 
-    <div class="age">
-        {{item.age}}
-    </div>
+			<div class="age">
+				{{item.age}}
+			</div>
 
-    <div class="position">
-        {{item.position}}
-    </div>
-  
-<div class="btn">
-  <button mat-raised-button (click)="openDialog(item)" color="accent">Delete</button>
-   <button mat-raised-button (click)="update()"  color="primary">Update</button>
-   </div>
-</div>
-</mat-grid-tile>
+			<div class="position">
+				{{item.position}}
+			</div>
+
+			<div class="btn">
+				<button mat-raised-button (click)="openDialog(item)" color="accent">Delete</button>
+				<button mat-raised-button (click)="update()"  color="primary">Update</button>
+			</div>
+		</div>
+	</mat-grid-tile>
 </mat-grid-list>

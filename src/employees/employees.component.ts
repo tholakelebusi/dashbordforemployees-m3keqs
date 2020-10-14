@@ -16,7 +16,7 @@ employees=[];
   constructor(public dialog: MatDialog,private employ:RecordService) { }
 
    ngOnInit(): void {
-    this.employees= this.employ.getDataDept();
+    this.employees= this.employ.getData();
   }
 
   openDialog(name){
@@ -33,7 +33,7 @@ employees=[];
       this.employees.splice(index,1);
       return true;
 
-    }//DO SOMETHING
+    }
       }
     });
 
@@ -45,6 +45,7 @@ update()
   
 }
 
+add()
 
 
 
