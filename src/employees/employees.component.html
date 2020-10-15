@@ -1,33 +1,35 @@
 <h3>Employee Dashbored</h3>
 <div *ngIf="n2">
-	<button (click)="open()"> AddEmployee </button>
+	<button mat-raised-button color="accent" (click)="open()"> AddEmployee </button>
 </div>
-<div *ngIf="n1">
-	<div>
-		<label for="fname">Name</label>
-		<input type="text" name="Fname" [(ngModel)]="names">
-</div>
-
+<mat-grid-tile>
+	<div *ngIf="n1">
 		<div>
-			<label for="fname">Surname</label>
-			<input type="text" name="Surname" [(ngModel)]="surnames">
+			<label for="fname">Name</label>
+			<input type="text" name="Fname" [(ngModel)]="names">
 </div>
-
-
 
 			<div>
-				<label for="age">Age</label>
-				<input type="number" name="age" [(ngModel)]="ages">
+				<label for="fname">Surname</label>
+				<input type="text" name="Surname" [(ngModel)]="surnames">
 </div>
 
+
+
 				<div>
-					<label for="postion">Position</label>
-					<input type="text" name="postion" [(ngModel)]="positions">
-          	<button (click)="addToLists()"> AddEmployee </button>
+					<label for="age">Age</label>
+					<input type="number" name="age" [(ngModel)]="ages">
 </div>
+
+					<div>
+						<label for="postion">Position</label>
+						<input type="text" name="postion" [(ngModel)]="positions">
+						<button mat-raised-button color="accent" (click)="addToLists()"> Add </button>
+					</div>
 
 
 				</div>
+</mat-grid-tile>
 
 <mat-grid-list cols="4" rowHeight="15cm">
 	<mat-grid-tile *ngFor="let item of employees">

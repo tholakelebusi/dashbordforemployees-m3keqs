@@ -47,7 +47,7 @@ export class EmployeesComponent implements OnInit {
 
   addToLists() {
     this.n1 = true;
-    this.n2 = ;
+    this.n2 = false;
     const newEmpl = {
       image: this.url,
       name: this.names,
