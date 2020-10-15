@@ -10,6 +10,7 @@ import { RecordService } from "../record.service";
 })
 export class EmployeesComponent implements OnInit {
   n1: boolean = false;
+  n2: boolean = false;
   employees = [];
   names = "";
   surnames = "";
@@ -46,6 +47,7 @@ export class EmployeesComponent implements OnInit {
 
   addToLists() {
     this.n1 = true;
+    this.n2 = ;
     const newEmpl = {
       image: this.url,
       name: this.names,
